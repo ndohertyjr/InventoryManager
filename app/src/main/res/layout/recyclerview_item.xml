@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/item_view_parent"
+    tools:context="com.zybooks.neildohertyoptionone.InventoryActivity">
+
+
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="0sp"
+        android:id="@+id/display_name"
+        android:layout_weight="1"
+        android:textAlignment="gravity"
+        android:contextClickable="true"
+        android:inputType="text"
+        android:text="test"
+        style="@style/inventoryItem"
+        >
+
+    </TextView>
+
+    <EditText
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:id="@+id/display_quantity"
+        android:layout_weight=".75"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:enabled="false"
+        style="@style/itemQuantity"
+        >
+
+    </EditText>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/delete_item"
+        android:src="@drawable/delete"
+        >
+    </ImageButton>
+
+
+</LinearLayout>

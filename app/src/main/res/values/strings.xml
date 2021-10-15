@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">NeilDohertyOptionOne</string>
+    <!-- Login strings -->
+    <string name="greeting">What\'s in your pallet?</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="login">Login</string>
+    <string name="new_user">Create new user</string>
+    <string name="user_password_failure">Invalid username or password. Please try again.</string>
+    <!-- Inventory strings -->
+    <string name="quantity">Quantity</string>
+    <string name="increase_1">+1</string>
+    <string name="increase_10">+10</string>
+    <string name="decrease_1">-1</string>
+    <string name="decrease_10">-10</string>
+    <string name="item_description">Item Description</string>
+    <string name="item_name">Item Name</string>
+    <string name="base_quantity">0</string>
+    <!-- Actions -->
+    <string name="add">Add Item</string>
+    <string name="delete">Delete Item</string>
+    <string name="edit">Edit Item</string>
+    <string name="sms_settings">SMS Settings</string>
+    <string name="save_changes">Save changes</string>
+    <!-- SMS Functions -->
+    <string name="enter_phone">Enter phone number:</string>
+    <string name="low_inventory">Set inventory quantity:</string>
+    <string name="toggle_sms">Enable SMS notifications?</string>
+    <string name="phone_hint">5555555555</string>
+    <string name="quantity_hint">##</string>
+    <string name="sms_notice">If enabled, notification will be sent when item quantity is below
+                              the set number</string>
+
+
+</resources>

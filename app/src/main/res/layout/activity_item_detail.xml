@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".AddItem">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent">
+
+    </View>
+
+    <EditText
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="35dp"
+        android:textColor="@color/lines"
+        android:inputType="text"
+        android:hint="@string/item_name"/>
+
+    <TextView
+        android:id="@+id/quantity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/quantity"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_name" />
+
+    <EditText
+        android:id="@+id/show_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/quantity_text"
+        app:layout_constraintTop_toBottomOf="@id/quantity_text"
+        android:inputType="number"
+        android:textColor="@color/lines"
+        android:hint="@string/base_quantity"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_changes"
+        app:layout_constraintTop_toBottomOf="@id/show_item_quantity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/save_changes"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:outlineAmbientShadowColor="@color/lines"
+        android:onClick="saveChangesClick"
+        android:enabled="false"
+        >
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

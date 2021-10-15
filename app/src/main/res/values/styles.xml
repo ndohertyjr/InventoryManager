@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarTheme">@style/AppTheme</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarTheme">@style/AppTheme</item>
+    </style>
+
+    <style name="inventoryItemsList">
+        <item name="android:textSize">@dimen/list_text_size</item>
+        <item name="android:padding">@dimen/list_padding</item>
+    </style>
+    
+    <style name="inventoryItem">
+        <item name="android:textSize">@dimen/inventory_item_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/item_padding</item>
+        <item name="android:paddingRight">@dimen/item_padding</item>
+        <item name="android:paddingBottom">@dimen/item_padding</item>
+    </style>
+
+    <style name="itemQuantity">
+        <item name="android:textSize">@dimen/quantity_text_size</item>
+        <item name="android:paddingLeft">@dimen/item_padding</item>
+        <item name="android:paddingRight">@dimen/item_padding</item>
+        <item name="android:paddingBottom">@dimen/item_padding</item>
+    </style>
+
+    <style name="switchSettings">
+        <item name="colorControlActivated">@color/enabled</item>
+        <item name="colorSwitchThumbNormal">@color/disabled_background</item>
+        <item name="android:colorForeground">@color/disabled_foreground</item>
+    </style>
+
+
+
+
+</resources>

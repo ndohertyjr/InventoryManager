@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zybooks.neildohertyoptionone.InventoryActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@+id/header"
+            app:layout_constraintTop_toTopOf="@+id/header"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/item_name"
+            android:padding="15dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/item"
+            app:layout_constraintTop_toTopOf="@id/header"
+            android:text="@string/quantity"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:layout_marginStart="40dp"
+            android:textStyle="bold">
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="25dp"
+            android:scrollbars="vertical"
+            android:background="@color/colorAccent"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addSubjectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addInventoryClick"
+            android:layout_gravity="end|bottom"
+            app:srcCompat="@drawable/add_inventory"
+            android:layout_margin="16dp"
+            app:backgroundTint="@color/colorPrimary"
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>
